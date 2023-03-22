@@ -3,7 +3,7 @@
 /**
  * main - opening function
  * _putchar: print function
- * return: this is 0
+ * Return: this is 0
  */
 
 int main(void)
