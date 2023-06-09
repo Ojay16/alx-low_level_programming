@@ -8,9 +8,9 @@
  * Return:1 if in lowercase and 0 if otherwise
  */
 
-int _islower(int c)
+int _islower(int o)
 {
-	if (c >= 97 && c <= 122)
+	if (o >= 97 && o <= 122)
 		return (1);
 	else
 		return (0);
