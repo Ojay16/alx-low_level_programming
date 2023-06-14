@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
  * str_concat -  concatenates two strings
- * @o1: input one to concat
- * @o2: input two to concat
- * Return: concat of o1 and o2
+ * @o1: input one
+ * @o2: input two
+ * Return: concatenated value  of o1 and o2
  */
 char *str_concat(char *o1, char *o2)
 {
