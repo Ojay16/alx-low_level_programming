@@ -2,41 +2,41 @@
 #include <stdlib.h>
 /**
  * str_concat -  concatenates two strings
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * @o1: input one to concat
+ * @o2: input two to concat
+ * Return: concat of o1 and o2
  */
-char *str_concat(char *s1, char *s2)
+char *str_concat(char *o1, char *o2)
 {
 	char *conct;
-	int i, ci;
+	int j, oj;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+	if (o1 == NULL)
+		o1 = "";
+	if (o2 == NULL)
+		o2 = "";
 
-	i = ci = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[ci] != '\0')
-		ci++;
-	conct = malloc(sizeof(char) * (i + ci + 1));
+	j = oj = 0;
+	while (o1[j] != '\0')
+		j++;
+	while (o2[oj] != '\0')
+		oj++;
+	conct = malloc(sizeof(char) * (j + oj + 1));
 
 	if (conct == NULL)
 		return (NULL);
-	i = ci = 0;
-	while (s1[i] != '\0')
+	j = oj = 0;
+	while (o1[j] != '\0')
 	{
-		conct[i] = s1[i];
-		i++;
+		conct[j] = o1[j];
+		j++;
 	}
 
-	while (s2[ci] != '\0')
+	while (o2[oj] != '\0')
 	{
-		conct[i] = s2[ci];
-		i++, ci++;
+		conct[j] = o2[oj];
+		j++, oj++;
 	}
-	conct[i] = '\0';
+	conct[j] = '\0';
 	return (conct);
 }
