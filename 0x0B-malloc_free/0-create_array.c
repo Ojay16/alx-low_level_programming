@@ -1,22 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create_array - creates array of char
+ * create_array - creates an array of char
  * @size: size of array
- * @c: char to assign
- * Description: create array of size size and assign char c
+ * @o: char to assign
+ * Description: creates an  array of size  and assign char o
  * Return: str, NULL if size = 0
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char o)
 {
 	char *str;
-	unsigned int i;
+	unsigned int j;
 
 	str = malloc(sizeof(char) * size);
 	if (size == 0 || str == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
-		str[i] = c;
+	for (j = 0; j < size; j++)
+		str[j] = o;
 	return (str);
 }
